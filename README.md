@@ -6,7 +6,10 @@ extra zeros are added in front of the numerical values. The code is in bash. Thi
 The only edit that must be done manually is to add your own correct directory in the "dir =" line. The rest of the program must simply be run. 
 
 ## Original Bfconvert Code: 
-The original bfconvert command (Copyright (c) 2020, VolkerH) can be downloaded through the following link: https://github.com/VolkerH/Tutorial-on-bftools-and-bfconvert
+The original bfconvert command (Copyright (c) 2020, VolkerH) can be downloaded through the following link: 
+
+https://github.com/VolkerH/Tutorial-on-bftools-and-bfconvert
+
 The purpose of this code is to break each video into individual frames, which as a result could be processed downstream by Cell Profiler.
 
 ## Expanded Bfconvert Code:
