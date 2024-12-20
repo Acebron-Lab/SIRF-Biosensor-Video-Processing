@@ -1,0 +1,16 @@
+dir="(Please use your own desired input directory)"
+
+for file in "$dir"/*.nd2; do
+    base_filename=$(basename "$file" .nd2)
+    new_filename=$(printf "%03d.nd2" "$base_filename")
+    mv "$file" "$dir/$new_filename"
+    echo "Renamed $file to $new_filename"
+done
+
+input_dir="(Please use your own desired input directory)"
+output_dir="(Please use your own desired output directory)"
+
+for file in "$input_dir"/*.nd2; do
+    base_filename=$(basename "$file" .nd2)
+    ./bfconvert -padded "$file" "$output_dir/$base_filename/${base_filename}_C%c_T%t.tif"
+done
